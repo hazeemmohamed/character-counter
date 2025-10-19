@@ -9,7 +9,7 @@ body{
 
 
 .container{
-    background-color: rgb(183, 124, 87);
+    background-color: rgb(163, 155, 150);
     padding: 20px;
     border-radius: 1%;
     display: flex;
@@ -20,6 +20,7 @@ body{
     text-align: justify;
     padding: 10px;
     border-radius: 2%;
+    font-size: 14px;
 }
 .warning{
     background-color: red;
@@ -28,16 +29,24 @@ body{
     border-radius: 5px;
     position: absolute;
     top: 50%;
+    width: 60%;
 
 }
 .warnMsg{
     width: 100%;
+    font-size: 20px;
+}
+.numChar{
+    font-size: 14px;
+}
+.remaining{
+    color: red;
 }
 .cls{
     position: absolute;
-    left: 90%;
-    top: -6%;
-    font-size: 20px;
+    left: 89%;
+    top: -7%;
+    font-size: 16px;
     cursor: pointer;
     border: none;
     box-shadow: 0px 5px 5px rgb(203, 20, 20);;
@@ -49,6 +58,7 @@ body{
 .hidden{
 display: none;
 }
+
 
 @media screen and (min-width:667px) {
     .warning{
@@ -63,5 +73,19 @@ display: none;
 }
 .warnMsg{
     width: 100%;
+    font-size: 30px;
+}
+.cls{
+    position: absolute;
+    left: 91%;
+    top: -4%;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 5px 5px rgb(203, 20, 20);;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 30px;
+    background-color: white;
 }
 }

@@ -2,6 +2,7 @@ var inputArea = document.getElementById("inputArea")
 var currentCount = document.getElementById("currentCount")
 var warnMsg = document.querySelector(".warning")
 var btnClose = document.querySelector(".cls")
+var remainingChar = document.querySelector(".remaining")
 
 function countChar(){
     var count = inputArea.value.length
@@ -17,6 +18,7 @@ function countChar(){
     }
 
         currentCount.textContent = count
+        remainingChar.textContent = "(Remaining: "+(200-count) +")"
         btnClose.addEventListener("click",function(){
             warnMsg.classList.add("hidden")
         })
